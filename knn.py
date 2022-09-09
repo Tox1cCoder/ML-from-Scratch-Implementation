@@ -39,9 +39,11 @@ if __name__ == "__main__":
 
     cmap = ListedColormap(["#FF0000", "#00FF00", "#0000FF"])
 
+
     def accuracy(y_true, y_pred):
         accuracy = np.sum(y_true == y_pred) / len(y_true)
         return accuracy
+
 
     iris = datasets.load_iris()
     X, y = iris.data, iris.target
