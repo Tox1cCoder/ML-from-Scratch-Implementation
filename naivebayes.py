@@ -32,7 +32,7 @@ class NaiveBayes:
             posterior = prior + posterior
             posteriors.append(posterior)
 
-        # return class with highest posterior probability
+        # return class with the highest posterior probability
         return self._classes[np.argmax(posteriors)]
 
     def _pdf(self, class_idx, x):
